@@ -1,5 +1,5 @@
 User Story 1:
-"As a presidential candidate, I want to analyze the states' positions on vaccine mandates based on the number of vaccinations and COVID cases to understand which states align with my party's view."
+As a presidential candidate, I want to analyze the states' positions on vaccine mandates based on the number of vaccinations and COVID cases to understand which states align with my party's view.
 
 Acceptance Criteria:
 The system should provide a detailed report on each state's stance on vaccine mandates, correlating the information with the number of vaccinations and COVID cases.
@@ -12,7 +12,7 @@ Test: Update the vaccination and COVID case data for a specific state, and confi
 
 
 User Story 2:
-"As a presidential candidate, I want to assess how different states managed the pandemic by analyzing the number of vaccinations and COVID cases, and utilize this information for future campaigns."
+As a presidential candidate, I want to assess how different states managed the pandemic by analyzing the number of vaccinations and COVID cases, and utilize this information for future campaigns.
 
 Acceptance Criteria:
 The system should offer a comprehensive analysis of each state's pandemic response, integrating data on the number of vaccinations and COVID cases.
@@ -25,7 +25,7 @@ Test: Add new data related to the number of vaccinations and COVID cases for a s
 
 
 User Story 3:
-"As a presidential candidate, I want to learn more about the effectiveness of the vaccines through which states had fewer deaths and the relevance of vaccines in those states so I can have a better stance on vaccines."
+As a presidential candidate, I want to learn more about the effectiveness of the vaccines through which states had fewer deaths and the relevance of vaccines in those states so I can have a better stance on vaccines.
 
 Acceptance Criteria:
 The system should present data on vaccine effectiveness, specifically focusing on states with lower mortality rates.
