@@ -1,12 +1,14 @@
 -- Query1: getNumberOfCovidCasesByStateInMonth
 SELECT covidCases 
 FROM getNumberOfCovidCasesByStateInMonth 
-WHERE stateNames = 'Texas' AND months BETWEEN '2019-01-01' AND '2022-12-31';
+WHERE stateNames IN ('Texas', 'California', 'New York') 
+AND months BETWEEN '2019-01-01' AND '2022-12-31';
 
 -- Query2: getVaccinatedPopulationByStateInMonth
 SELECT vaccinated, populations 
 FROM getVaccinatedPopulationByStateInMonth 
-WHERE stateNames = 'Texas' AND months BETWEEN '2019-01-01' AND '2022-12-31';
+WHERE stateNames IN ('Texas', 'California', 'New York') 
+AND months BETWEEN '2019-01-01' AND '2022-12-31';
 
 -- Query3: getRankedStatesByCorrCoefftBetweenCasesAndVaccines
 WITH CasesVaccines AS (
@@ -18,6 +20,7 @@ WITH CasesVaccines AS (
         getRankedStatesByCorrCoefftBetweenCasesAndVaccines
     WHERE 
         months BETWEEN '2019-01-01' AND '2022-12-31'
+    AND stateNames IN ('Texas', 'California', 'New York')
     GROUP BY 
         stateNames
 )
@@ -39,7 +42,8 @@ SELECT
 FROM 
     getRatioOfCovidCasestoPopulationByState 
 WHERE 
-    months BETWEEN '2019-01-01' AND '2022-12-31';
+    months BETWEEN '2019-01-01' AND '2022-12-31'
+AND stateNames IN ('Texas', 'California', 'New York');
 
 -- Query5: getRatioOfVaccincatedToPopulationByState
 SELECT 
@@ -48,9 +52,11 @@ SELECT
 FROM 
     getRatioOfVaccincatedToPopulationByState 
 WHERE 
-    months BETWEEN '2019-01-01' AND '2022-12-31';
+    months BETWEEN '2019-01-01' AND '2022-12-31'
+AND stateNames IN ('Texas', 'California', 'New York');
 
 -- Query6: getDeathCountbyStateInMonth
 SELECT deaths 
 FROM getDeathCountbyStateInMonth 
-WHERE stateNames = 'Texas' AND months BETWEEN '2019-01-01' AND '2022-12-31';
+WHERE stateNames IN ('Texas', 'California', 'New York') 
+AND months BETWEEN '2019-01-01' AND '2022-12-31';
