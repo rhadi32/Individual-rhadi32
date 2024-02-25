@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US COVID Insight</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1>US Covid-19 Data Insight</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="insight.html">Get Insight</a></li>
+                <li><a href="about.html" class="active">About Data</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="overview">
+                <br>
+                <h2>COVID-19 Overview</h2>
+                <br>
+                <br>
+                <p>COVID-19 (coronavirus disease 2019) is a disease caused by a virus named SARS-CoV-2. It can be very
+                    contagious and spreads quickly. Over one million people have died from COVID-19 in the United States.
+                    COVID-19 most often causes respiratory symptoms that can feel much like a cold, the flu, or pneumonia.
+                    COVID-19 may attack more than your lungs and respiratory system. Other parts of your body may also be
+                    affected by the disease. Most people with COVID-19 have mild symptoms, but some people become severely
+                    ill. Some people including those with minor or no symptoms will develop Post-COVID Conditions – also
+                    called “Long COVID.” Viruses are constantly changing, including the virus that causes COVID-19. These
+                    changes occur over time and can lead to new strains of the virus or variants of COVID-19. Slowing the
+                    spread of the virus, by protecting yourself and others, can help slow new variants from developing.
+                </p>
+            </div>
+            <br>
+            <div class="overview">
+                <br>
+                <h2>Vaccine overview</h2>
+
+                <br>
+                <p>Vaccines to prevent severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) infection are considered
+                    the most promising approach for curbing the coronavirus disease 2019 (COVID-19) pandemic. Several COVID-19
+                    vaccines are available globally. The World Health Organization (WHO) maintains an updated list of vaccine
+                    candidates under evaluation and available for administration.
+                </p>
+                <br>
+                <hr>                
+                <br>
+                <p>● Pace of COVID-19 vaccine development – Although COVID-19 vaccine development has been accelerated, each
+                    vaccine that has received emergency use listing by the World Health Organization (WHO; which includes those
+                    that have been authorized or approved in the United States) has gone through the standard preclinical and
+                    clinical stages of development. Safety criteria have remained stringent; data safety and monitoring
+                    committees (DSMCs) composed of independent vaccine experts and study sponsors assess adverse events that
+                    are reported in each phase of clinical study and approve advancement to the next phase.
+                </p>
+                <br>
+                <hr>
+                <br>
+                <p>● Calculation of vaccine efficacy – Vaccine efficacy in percent is the reduction in disease incidence among
+                    those who received the vaccine versus those who received the control product and is calculated with the
+                    following formula:
+                    ([attack rate in the unvaccinated – attack rate in the vaccinated]/attack rate in the unvaccinated) x 100,
+                    often abbreviated as ([ARU – ARV]/ARU) x 100
+                </p>
+                <br>
+            </div>
+            <div class = "search-area">
+                <h2>Look for data</h2>
+                <br>
+                <form onsubmit="((+(startyear.value+startmonth.value))>= (+(startyear.value+startmonth.value))) ? alert('Start can\'t be greater than end.') : {}" action="" target="_self">
+                    <fieldset>
+                        <legend>Search countries and a month range</legend>
+                        <br>
+                        <label for="state">State name:</label>
+                        <input type="text" id="state" name="state" list="statenames">
+                        <datalist id="statenames">
+                            <option value="Alaska">Alaska</option>
+                            <option value="Alabama">Alabama</option>
+                            <option value="Arkansas">Arkansas</option>
+                            <option value="American Samoa">American Samoa</option>
+                            <option value="Arizona">Arizona</option>
+                            <option value="California">California</option>
+                            <option value="Colorado">Colorado</option>
+                            <option value="Connecticut">Connecticut</option>
+                            <option value="District of Columbia">District of Columbia</option>
+                            <option value="Delaware">Delaware</option>
+                            <option value="Florida">Florida</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Guam">Guam</option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="Iowa">Iowa</option>
+                            <option value="Idaho">Idaho</option>
+                            <option value="Illinois">Illinois</option>
+                            <option value="Indiana">Indiana</option>
+                            <option value="Kansas">Kansas</option>
+                            <option value="Kentucky">Kentucky</option>
+                            <option value="Louisiana">Louisiana</option>
+                            <option value="Massachusetts">Massachusetts</option>
+                            <option value="Maryland">Maryland</option>
+                            <option value="Maine">Maine</option>
+                            <option value="Michigan">Michigan</option>
+                            <option value="Minnesota">Minnesota</option>
+                            <option value="Missouri">Missouri</option>
+                            <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                            <option value="Mississippi">Mississippi</option>
+                            <option value="Montana">Montana</option>
+                            <option value="National">National</option>
+                            <option value="North Carolina">North Carolina</option>
+                            <option value="North Dakota">North Dakota</option>
+                            <option value="Nebraska">Nebraska</option>
+                            <option value="New Hampshire">New Hampshire</option>
+                            <option value="New Jersey">New Jersey</option>
+                            <option value="New Mexico">New Mexico</option>
+                            <option value="Nevada">Nevada</option>
+                            <option value="New York">New York</option>
+                            <option value="Ohio">Ohio</option>
+                            <option value="Oklahoma">Oklahoma</option>
+                            <option value="Oregon">Oregon</option>
+                            <option value="Pennsylvania">Pennsylvania</option>
+                            <option value="Puerto Rico">Puerto Rico</option>
+                            <option value="Rhode Island">Rhode Island</option>
+                            <option value="South Carolina">South Carolina</option>
+                            <option value="South Dakota">South Dakota</option>
+                            <option value="Tennessee">Tennessee</option>
+                            <option value="Texas">Texas</option>
+                            <option value="Utah">Utah</option>
+                            <option value="Virginia">Virginia</option>
+                            <option value="Virgin Islands">Virgin Islands</option>
+                            <option value="Vermont">Vermont</option>
+                            <option value="Washington">Washington</option>
+                            <option value="Wisconsin">Wisconsin</option>
+                            <option value="West Virginia">West Virginia</option>
+                            <option value="Wyoming">Wyoming</option>
+                        </datalist>
+                        <br>
+                        <label for="startyear">StartMonth</label>
+                        <select id="startyear" name="startyear">
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                        </select>
+                        <select id="startmonth" name="startmonth">
+                            <option value="01">January</option>
+                            <option value="02">February</option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <span>---</span>
+                        <label for="endyear">EndMonth</label>
+                        <select id="endyear" name="endyear">
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                        </select>
+                        <select id="endmonth" name="endmonth">
+                            <option value="01">January</option>
+                            <option value="02">February</option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <br>
+                        <input type="submit" value="Go" class="go-button">
+                    </fieldset>
+                </form>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+          
+        </main>
+        <footer>
+    
+        </footer>

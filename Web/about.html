@@ -4,26 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About The Data</title>
-    <link rel="stylesheet" href="index_styles.css">
-    <link rel="stylesheet" href="about_styles.css"> 
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <h1 style="float: left">US Covid-19 Data Insight</h1>
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="index.html">Get insight</a>
-            </li>
-            <li class="nav-item">
-                <a href="about.html" class="active">About Data</a>
-            </li>
-        </ul>
+    <nav class="navbar">
+        <div class="container">
+            <h1>US Covid-19 Data Insight</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="insight.html">Get Insight</a></li>
+                <li><a href="about.html" class="active">About Data</a></li>
+            </ul>
+        </div>
     </nav>
+
     <div class="container">
         <h1>About The Data</h1>
+
         <div class="data-info">
             <h2>Covid Data</h2>
             <p><strong>Search Terms and Search Tool Used:</strong><br>
@@ -32,109 +29,27 @@
             <p><strong>URL:</strong><br>
             Covid Cases: <a href="https://github.com/datasets/covid-19/blob/main/data/us_confirmed.csv">Download Dataset</a><br>
             Please ensure to download a local copy for your reference.</p>
-
-            <p><strong>Date Downloaded:</strong><br>
-            January 16, 2024</p>
-
-            <p><strong>Authorship:</strong><br>
-            The dataset is curated by the Johns Hopkins University Center for Systems Science and Engineering (CSSE).</p>
-
-            <p><strong>Exact Name of the Dataset and Version:</strong><br>
-            us_confirmed.csv<br>
-
-            <p><strong>Time Period, Geography, and/or Scope Covered:</strong><br>
-            The dataset covers the years 2019 to 2022 and encompasses the entire United States, broken down by state.</p>
-
-            <p><strong>Location of Dataset Overview Information:</strong><br>
-            <a href="https://github.com/datasets/covid-19/tree/main">Dataset Overview Information</a></p>
-
-            <p><strong>Location of Technical Documentation:</strong><br>
-            <a href="https://github.com/datasets/covid-19/blob/main/README.md">Technical Documentation on GitHub</a><br>
-            <a href="https://datahub.io/core/covid-19">Technical Documentation on Datahub</a></p>
-
-            <p><strong>Data Formats:</strong><br>
-            These dataset is provided solely in CSV format.</p>
-
-            <p><strong>Terms of Use:</strong><br>
-            These dataset are licensed under the Open Data Commons Public Domain and Dedication License.</p>
-
-            <p><strong>Suggested Citation (if provided):</strong><br>
-            N/A</p>
         </div>
+
         <div class="data-info">
             <h2>COVID Vaccine Data</h2>
             <p><strong>Search Terms and Search Tool Used:</strong><br>
-                We googled “vaccination data by states”. 
-            </p>
+            We googled “vaccination data by states”.</p>
 
             <p><strong>URL:</strong><br>
             Covid Vaccines: <a href="https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-Jurisdi/unsk-b7fc/about_data">Download Dataset</a><br>
             Please ensure to download a local copy for your reference.</p>
+        </div>
 
-            <p><strong>Date Downloaded:</strong><br>
-            January 16, 2024</p>
+        <div class="data-info">
+            <h2>COVID Death Data</h2>
+            <p><strong>Search Terms and Search Tool Used:</strong><br>
+            We discovered this dataset through the Software Design course research guide.</p>
 
-            <p><strong>Authorship:</strong><br>
-            The dataset is curated by the by the CDC.</p>
-
-            <p><strong>Exact Name of the Dataset and Version:</strong><br>
-            COVID-19 Vaccinations in the United States, Jurisdiction</p>
-
-            <p><strong>Time Period, Geography, and/or Scope Covered:</strong><br>
-            In the United States at national and jurisdiction level.
-            Data represents all vaccine partners including jurisdictional partner clinics, retail pharmacies, long-term care facilities, dialysis centers, Federal Emergency Management Agency and Health Resources and Services Administration partner sites, and federal entity facilities.
-            </p>
-
-            <p><strong>Location of Dataset Overview Information:</strong><br>
-            <a href="https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-Jurisdi/unsk-b7fc/about_data">Dataset Overview Information</a></p>
-
-            <p><strong>Location of Technical Documentation:</strong><br>
-            <a href="https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-Jurisdi/unsk-b7fc/about_data">Technical Documentation on GitHub</a><br>
-
-            <p><strong>Data Formats:</strong><br>
-            These dataset is exportable in .csv, .xlsx, .rdf, rss, xml, .tsv</p>
-
-            <p><strong>Terms of Use:</strong><br>
-            These dataset are licensed under the Open Data Commons <a href="https://www.opendatacommons.org/licenses/pddl/1-0/">Public Domain and Dedication License.</a></p>
-
-            <p><strong>Suggested Citation (if provided):</strong><br>
-            N/A</p>
+            <p><strong>URL:</strong><br>
+            <a href="https://github.com/datasets/covid-19/blob/main/data/us_deaths.csv">Download Dataset</a><br>
+            Please ensure to download a local copy for your reference.</p>
+        </div>
     </div>
-    <div class="data-info">
-        <h2>COVID Death Data</h2>
-        <p><strong>Search Terms and Search Tool Used:</strong><br>
-        We discovered this dataset through the Software Design course research guide.</p>
-
-        <p><strong>URL:</strong><br>
-        <a href="https://github.com/datasets/covid-19/blob/main/data/us_deaths.csv">Download Dataset</a><br>
-
-        <p><strong>Date Downloaded:</strong><br>
-        January 16, 2024</p>
-
-        <p><strong>Authorship:</strong><br>
-        The dataset is curated by the Johns Hopkins University Center for Systems Science and Engineering (CSSE).</p>
-
-        <p><strong>Exact Name of the Dataset and Version:</strong><br>
-        us_deaths.csv<br>
-
-        <p><strong>Time Period, Geography, and/or Scope Covered:</strong><br>
-        The dataset covers the years 2019 to 2022 and encompasses the entire United States, broken down by state.</p>
-
-        <p><strong>Location of Dataset Overview Information:</strong><br>
-        <a href="https://github.com/datasets/covid-19/tree/main">Dataset Overview Information</a></p>
-
-        <p><strong>Location of Technical Documentation:</strong><br>
-        <a href="https://github.com/datasets/covid-19/blob/main/README.md">Technical Documentation on GitHub</a><br>
-        <a href="https://datahub.io/core/covid-19">Technical Documentation on Datahub</a></p>
-
-        <p><strong>Data Formats:</strong><br>
-        These dataset is provided solely in CSV format.</p>
-
-        <p><strong>Terms of Use:</strong><br>
-        These dataset are licensed under the Open Data Commons <a href="https://www.opendatacommons.org/licenses/pddl/1-0/">Public Domain and Dedication License.</a></p>
-
-        <p><strong>Suggested Citation (if provided):</strong><br>
-        N/A</p>
-</div>
 </body>
 </html>

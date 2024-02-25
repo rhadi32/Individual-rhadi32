@@ -1,0 +1,98 @@
+/* Reset some default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles for the navigation bar */
+.nav-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.nav-bar .nav-list {
+    list-style: none;
+}
+
+.nav-bar .nav-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-bar .nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-bar .nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-bar .nav-item a:hover {
+    color: #ffd700;
+}
+
+/* Styles for the main content container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Styles for data sections */
+.overview {
+    margin-bottom: 40px;
+}
+
+.overview h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.overview p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.search-area {
+    margin-bottom: 40px;
+}
+
+.search-area fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.search-area legend {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.search-area label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.search-area input,
+.search-area select {
+    margin-bottom: 10px;
+}
+
+.go-button {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.go-button:hover {
+    background-color: #555;
+}
